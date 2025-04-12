@@ -24,7 +24,7 @@ func TestAuth(t *testing.T) {
         {
             name:          "Missing Authorization Header",
             headers:       http.Header{},
-            expectedKey:   "temporary break",
+            expectedKey:   "",
             expectedError: ErrNoAuthHeaderIncluded,
         },
         {
