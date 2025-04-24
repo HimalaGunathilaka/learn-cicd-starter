@@ -34,7 +34,7 @@ jobs:
       - name: Run tests
         run: go test ./internal/auth -cover
       
-      - name: Style check
+      - name: Style
         run: |
           output=$(go fmt ./...)
           if [ -n "$output" ]; then
